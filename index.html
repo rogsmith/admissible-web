@@ -92,13 +92,14 @@
       <div class="col-lg-5">
 			<div class="card box-shadow-v2 bg-white u-of-hidden text-center">
 			 	<h2 class="bg-primary m-0 py-3 text-white">You caught us before we're ready.</h2>
-			 	<form action="" method="POST" class="p-4 p-md-5">
+        <form action="https://formspree.io/rogsmith@gmail.com" method="POST" class="p-4 p-md-5">
           <p>We're working hard to put the finishing touches on Admissible. Stay up to date with our progress.</p>
 			 	<div class="input-group u-rounded-50 border u-of-hidden u-mb-20">
 					<div class="input-group-addon bg-white border-0 pl-4 pr-0">
 						<span class="icon icon-Mail text-primary"></span>
 					</div>
-					<input type="text" class="form-control border-0 p-3" placeholder="Your email">
+					<input name='email' type="text" class="form-control border-0 p-3" placeholder="Your email">
+          <input type="hidden" name="_next" value="//admissible.work/thanks.html" />
 				</div>
 			 		<button class="btn btn-primary btn-rounded">
 			 			Keep Me Updated
@@ -315,20 +316,21 @@
 					Do You Want to Find Out More?
 				</h2>
 				<div class="u-h-4 u-w-50 bg-white rounded u-mb-70 mx-auto"></div>
-				<form action="" method="POST">
+				<form action="https://formspree.io/rogsmith@gmail.com" method="POST">
 					<div class="row">
 						<div class="col-md-6 u-mb-30">
-							<input type="text" placeholder="Your name*">
+							<input type="text" placeholder="Your name*" name='name'>
 						</div>
 						<div class="col-md-6 u-mb-30">
-							<input type="email" placeholder="Your email*">
+							<input type="email" placeholder="Your email*" name='email'>
 						</div>
 						<div class="col-12 u-mb-30">
-							<textarea rows="5" placeholder="Message"></textarea>
+							<textarea rows="5" placeholder="Message" name='message'></textarea>
 						</div>
 					</div> <!-- END row-->
+          <input type="hidden" name="_next" value="//admissible.work/thanks.html" />
 					<div class="text-center">
-						<button class="btn btn-white"> Send Request</button>
+						<button class="btn btn-white" type='submit'> Send Request</button>
 					</div>
 				</form>
 			</div> <!-- END col-lg-8-->
